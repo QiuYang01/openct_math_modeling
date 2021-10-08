@@ -11,7 +11,7 @@ Vue.use(ElementUI);
 
 
 const dev = "http://127.0.0.1:6060/";
-const prod = "http://cdns.gnnu.work/api/"
+const prod = "https://cdns.gnnu.work/api/"
 // const prod = "http://122.51.31.39:6060/"
 // const prod = "http://127.0.0.1:6060/"
 

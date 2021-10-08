@@ -2,9 +2,7 @@
 
 > openct_math_modeling
 
-# 安装依赖
-# npm i element-ui -S
-# npm install axios --save
+
 
 ## Build Setup
 
