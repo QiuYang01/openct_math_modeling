@@ -555,7 +555,7 @@ export default {
           cancelButtonText: '取消',
           type: 'warning'
           }).then(() => {
-
+            console.log("parent.postMessage....")
             parent.postMessage(result, "*"); //将书记处发送到平台
             this.loading1 = false;
             // this.$axios({
@@ -580,10 +580,12 @@ export default {
             //     this.loading1 = false;
             // })
           }).catch(() => {
+            this.loading1 = false;
             return        
           });
         }else{
             this.loading1 = true;
+            console.log("parent.postMessage....")
             parent.postMessage(result, "*"); //将书记处发送到平台
             this.loading1 = false;
             // this.$axios({
@@ -628,6 +630,7 @@ export default {
         console.log("提交结果",result); //checkfinished
        
         this.loading1 = true;
+        console.log("parent.postMessage....")
         parent.postMessage(result, "*"); //将书记处发送到平台
         this.loading1 = false;
         // this.$axios({
